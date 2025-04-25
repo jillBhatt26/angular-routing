@@ -1,17 +1,11 @@
 {
-  "builds": [
-    {
-      "src": "src/index.html",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist/angular-router-trial"
-      }
-    }
-  ],
+  "version": 2,
+  "buildCommand": "ng build",
+  "outputDirectory": "dist/angular-router-trial",
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "dist/angular-router-trial/index.html"
+      "dest": "/index.html"
     }
   ]
 }
